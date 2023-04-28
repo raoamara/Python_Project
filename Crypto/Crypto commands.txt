@@ -1,4 +1,0 @@
-To generate symetric key -> openssl rand -hex 16 > raokey.txt
-To encrypt the file      -> openssl enc -aes-256-cbc -in rao.txt -out rao_encrypted.txt -k file:raokey.txt
-TO decrypt the file      -> openssl enc -d -aes-256-cbc -in rao_encrypted.txt -out rao_decrypted.txt -k file:raokey.txt
- 

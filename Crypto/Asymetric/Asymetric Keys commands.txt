@@ -1,0 +1,4 @@
+openssl genpkey -algorithm RSA -out rao_private_key.pem 
+openssl rsa -in private_key.pem -pubout -out rao_public_key.pem
+openssl rsautl -encrypt -in raotext.txt -out rao_encrypted.txt -pubin -inkey rao_public_key.pem
+openssl rsautl -decrypt -in rao_encrypted.txt -out rao_decrypted.txt -inkey private_key.pem
